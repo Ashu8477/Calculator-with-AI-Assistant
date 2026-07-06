@@ -1,0 +1,130 @@
+/* ===========================
+   AI Calculator
+   Variables
+   =========================== */
+
+:root {
+  /*========== COLORS ==========*/
+
+  --bg-color: #050816;
+  --surface-color: #111827;
+  --surface-2: #1f2937;
+  --display-color: #0b1220;
+
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary: #8b5cf6;
+
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  /*========== GLASS ==========*/
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: 18px;
+
+  /*========== BUTTONS ==========*/
+
+  --button-bg: #182133;
+  --button-hover: #22304a;
+  --button-active: #30415f;
+
+  /*========== SHADOWS ==========*/
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.18);
+
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.45);
+
+  --glow-blue: 0 0 25px rgba(59, 130, 246, 0.45);
+
+  --glow-purple: 0 0 25px rgba(139, 92, 246, 0.35);
+
+  /*========== RADIUS ==========*/
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-round: 999px;
+
+  /*========== FONT ==========*/
+
+  --font-family: Inter, 'Segoe UI', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 2rem;
+  --fs-display: 2.6rem;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /*========== SPACING ==========*/
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 30px;
+  --space-8: 40px;
+
+  /*========== TRANSITIONS ==========*/
+
+  --transition-fast: 0.2s ease;
+
+  --transition: 0.35s ease;
+
+  --transition-slow: 0.5s ease;
+}
+
+/* ===========================
+   Light Theme
+   =========================== */
+
+body.light {
+  --bg-color: #eef2ff;
+
+  --surface-color: #ffffff;
+
+  --surface-2: #f5f7fb;
+
+  --display-color: #ffffff;
+
+  --primary: #2563eb;
+
+  --secondary: #7c3aed;
+
+  --text-primary: #111827;
+
+  --text-secondary: #334155;
+
+  --text-muted: #64748b;
+
+  --button-bg: #f3f4f6;
+
+  --button-hover: #e5e7eb;
+
+  --button-active: #d1d5db;
+
+  --border-color: rgba(0, 0, 0, 0.08);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+
+  --glass-border: rgba(255, 255, 255, 0.8);
+}

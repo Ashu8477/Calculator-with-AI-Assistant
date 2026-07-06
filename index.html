@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Calculator | Ashu Kumar</title>
+
+    <meta
+      name="description"
+      content="Modern AI Calculator with Voice Assistant, Scientific Calculator and Natural Language Math Solver"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="css/assistant.css" />
+    <link rel="stylesheet" href="css/voice.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Background Blur -->
+    <div class="bg-gradient"></div>
+
+    <main class="container">
+      <!-- ================= CALCULATOR ================= -->
+
+      <section class="calculator">
+        <div class="calc-header">
+          <div class="logo">
+            <span class="logo-icon">🧮</span>
+
+            <div>
+              <h2>AI Calculator</h2>
+
+              <small>Smart Scientific Calculator</small>
+            </div>
+          </div>
+
+          <button id="themeBtn" class="icon-btn" title="Toggle Theme">
+            🌙
+          </button>
+        </div>
+
+        <!-- DISPLAY -->
+
+        <div class="display-box">
+          <div id="expression" class="expression"></div>
+
+          <input id="display" type="text" readonly placeholder="0" />
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="buttons">
+          <!-- Row 1 -->
+
+          <button class="danger" data-value="clear">C</button>
+
+          <button data-value="back">⌫</button>
+
+          <button data-value="(">(</button>
+
+          <button data-value=")">)</button>
+
+          <button data-value="%">%</button>
+
+          <!-- Row 2 -->
+
+          <button data-value="7">7</button>
+
+          <button data-value="8">8</button>
+
+          <button data-value="9">9</button>
+
+          <button data-value="/">÷</button>
+
+          <button data-value="square">x²</button>
+
+          <!-- Row 3 -->
+
+          <button data-value="4">4</button>
+
+          <button data-value="5">5</button>
+
+          <button data-value="6">6</button>
+
+          <button data-value="*">×</button>
+
+          <button data-value="sqrt">√</button>
+
+          <!-- Row 4 -->
+
+          <button data-value="1">1</button>
+
+          <button data-value="2">2</button>
+
+          <button data-value="3">3</button>
+
+          <button data-value="-">−</button>
+
+          <button data-value=".">.</button>
+
+          <!-- Row 5 -->
+
+          <button class="equal" data-value="=">=</button>
+
+          <button data-value="0">0</button>
+
+          <button data-value="+">+</button>
+        </div>
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="quick-tools">
+          <button id="historyBtn">📜 History</button>
+
+          <button id="clearHistoryBtn">🗑 Clear</button>
+        </div>
+      </section>
+
+      <!-- ================= AI PANEL ================= -->
+
+      <aside class="assistant" id="assistant">
+        <div class="assistant-header">
+          <div>
+            <h2>🤖 AI Math Assistant</h2>
+
+            <small>Natural Language Calculator</small>
+          </div>
+
+          <button id="closeAssistant">✕</button>
+        </div>
+
+        <div class="chat" id="chat">
+          <div class="welcome-card">
+            <h3>👋 Welcome</h3>
+
+            <p>I can solve:</p>
+
+            <ul>
+              <li>➕ Addition</li>
+
+              <li>➖ Subtraction</li>
+
+              <li>✖ Multiplication</li>
+
+              <li>➗ Division</li>
+
+              <li>📐 Square Root</li>
+
+              <li>📊 Percentage</li>
+
+              <li>🧮 Scientific Maths</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="typing" id="typing">
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+        </div>
+
+        <div class="assistant-input">
+          <input
+            type="text"
+            id="aiInput"
+            placeholder="Ask anything like '25% of 400'"
+          />
+
+          <button id="micBtn">🎤</button>
+
+          <button id="sendBtn">Send</button>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Voice Popup -->
+
+    <div class="voice-popup hidden" id="voicePopup">
+      <div class="mic-circle">🎤</div>
+
+      <h3>Listening...</h3>
+
+      <p id="voiceText">Speak your math question</p>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="js/constants.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="js/assistant.js"></script>
+    <script src="js/keyboard.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

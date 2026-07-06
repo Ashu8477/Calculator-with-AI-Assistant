@@ -1,0 +1,301 @@
+/* ==========================================
+   LARGE LAPTOP (1400px)
+========================================== */
+
+@media (max-width: 1400px) {
+  .container {
+    width: 95%;
+
+    gap: 28px;
+  }
+}
+
+/* ==========================================
+   LAPTOP (1200px)
+========================================== */
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    padding: 30px 0;
+  }
+
+  .calculator {
+    width: min(700px, 100%);
+  }
+
+  .assistant {
+    width: min(700px, 100%);
+
+    height: 700px;
+  }
+}
+
+/* ==========================================
+   TABLET (992px)
+========================================== */
+
+@media (max-width: 992px) {
+  .calculator {
+    width: 100%;
+
+    padding: 22px;
+  }
+
+  .assistant {
+    width: 100%;
+
+    height: 650px;
+  }
+
+  .buttons {
+    gap: 12px;
+  }
+
+  .buttons button {
+    height: 68px;
+  }
+}
+
+/* ==========================================
+   MOBILE (768px)
+========================================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    width: 100%;
+
+    gap: 20px;
+
+    padding: 0;
+  }
+
+  .calculator {
+    width: 100%;
+
+    padding: 20px;
+
+    border-radius: 22px;
+  }
+
+  .assistant {
+    width: 100%;
+
+    height: 550px;
+
+    border-radius: 22px;
+  }
+
+  .logo h2 {
+    font-size: 1.15rem;
+  }
+
+  .logo small {
+    display: none;
+  }
+
+  .logo-icon {
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 24px;
+  }
+
+  #display {
+    font-size: 2.2rem;
+  }
+
+  .display-box {
+    min-height: 120px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .buttons button {
+    height: 62px;
+
+    font-size: 1rem;
+  }
+
+  .quick-tools {
+    flex-direction: column;
+  }
+
+  .assistant-header {
+    padding: 18px;
+  }
+
+  .assistant-input {
+    padding: 16px;
+  }
+
+  .assistant-input input {
+    height: 52px;
+
+    font-size: 14px;
+  }
+
+  #micBtn {
+    width: 52px;
+
+    height: 52px;
+  }
+
+  #sendBtn {
+    width: 80px;
+
+    height: 52px;
+  }
+}
+
+/* ==========================================
+   SMALL MOBILE (576px)
+========================================== */
+
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .calculator {
+    padding: 16px;
+  }
+
+  .display-box {
+    padding: 16px;
+
+    min-height: 105px;
+  }
+
+  #display {
+    font-size: 1.9rem;
+  }
+
+  .expression {
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .buttons button {
+    height: 56px;
+
+    border-radius: 16px;
+
+    font-size: 0.95rem;
+  }
+
+  .assistant {
+    height: 500px;
+  }
+
+  .chat {
+    padding: 16px;
+  }
+
+  .bubble {
+    max-width: 92%;
+
+    padding: 14px;
+
+    font-size: 0.9rem;
+  }
+
+  .assistant-input {
+    gap: 8px;
+  }
+
+  #sendBtn {
+    width: 72px;
+
+    font-size: 13px;
+  }
+
+  .voice-popup {
+    width: 90%;
+
+    padding: 24px;
+  }
+
+  .mic-circle {
+    width: 90px;
+
+    height: 90px;
+
+    font-size: 40px;
+  }
+}
+
+/* ==========================================
+   EXTRA SMALL (400px)
+========================================== */
+
+@media (max-width: 400px) {
+  .buttons {
+    gap: 6px;
+  }
+
+  .buttons button {
+    height: 50px;
+
+    font-size: 0.85rem;
+  }
+
+  #display {
+    font-size: 1.6rem;
+  }
+
+  .assistant {
+    height: 460px;
+  }
+
+  .assistant-header h2 {
+    font-size: 1rem;
+  }
+
+  .assistant-input input {
+    font-size: 13px;
+  }
+
+  #micBtn {
+    width: 48px;
+
+    height: 48px;
+
+    font-size: 18px;
+  }
+
+  #sendBtn {
+    width: 65px;
+
+    height: 48px;
+
+    font-size: 12px;
+  }
+}
+
+/* ==========================================
+   LANDSCAPE MOBILE
+========================================== */
+
+@media (max-height: 650px) {
+  .container {
+    padding: 20px 0;
+  }
+
+  .assistant {
+    height: 420px;
+  }
+}

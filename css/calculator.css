@@ -1,0 +1,289 @@
+/* ==========================================
+   CALCULATOR
+========================================== */
+
+.calculator {
+  width: 560px;
+
+  padding: 28px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.calc-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+.logo-icon {
+  width: 62px;
+
+  height: 62px;
+
+  border-radius: 18px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 28px;
+
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+
+  box-shadow: var(--glow-blue);
+}
+
+.logo h2 {
+  font-size: 1.45rem;
+
+  margin-bottom: 4px;
+}
+
+.logo small {
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   DISPLAY
+========================================== */
+
+.display-box {
+  background: var(--display-color);
+
+  border-radius: 24px;
+
+  padding: 22px;
+
+  border: 1px solid var(--border-color);
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 140px;
+
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.03);
+}
+
+.expression {
+  min-height: 26px;
+
+  color: var(--text-muted);
+
+  font-size: 0.95rem;
+
+  text-align: right;
+
+  word-break: break-all;
+
+  margin-bottom: 12px;
+}
+
+#display {
+  width: 100%;
+
+  background: none;
+
+  border: none;
+
+  color: var(--text-primary);
+
+  font-size: 3rem;
+
+  text-align: right;
+
+  font-weight: 700;
+}
+
+/* ==========================================
+   BUTTON GRID
+========================================== */
+
+.buttons {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 14px;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.buttons button {
+  height: 72px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  font-size: 1.1rem;
+
+  font-weight: 600;
+
+  color: var(--text-primary);
+
+  background: linear-gradient(145deg, var(--button-bg), var(--surface-2));
+
+  transition: all 0.25s ease;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 6px 14px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.04);
+}
+
+/* Hover */
+
+.buttons button:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  background: linear-gradient(145deg, var(--primary), var(--secondary));
+
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+
+/* Click */
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+/* Ripple */
+
+.buttons button::before {
+  content: '';
+
+  position: absolute;
+
+  width: 0;
+
+  height: 0;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  transition: 0.55s;
+}
+
+.buttons button:hover::before {
+  width: 180px;
+
+  height: 180px;
+}
+
+/* ==========================================
+   SPECIAL BUTTONS
+========================================== */
+
+.danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+}
+
+.danger:hover {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.45);
+}
+
+.equal {
+  grid-column: span 2;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  ) !important;
+
+  color: white;
+
+  font-size: 1.4rem;
+
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.equal:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+
+/* ==========================================
+   QUICK TOOLS
+========================================== */
+
+.quick-tools {
+  display: flex;
+
+  gap: 16px;
+}
+
+.quick-tools button {
+  flex: 1;
+
+  height: 56px;
+
+  border-radius: 16px;
+
+  background: var(--surface-2);
+
+  color: var(--text-primary);
+
+  font-size: 0.95rem;
+
+  transition: 0.3s;
+}
+
+.quick-tools button:hover {
+  background: var(--primary);
+
+  color: white;
+}
+
+/* ==========================================
+   DISPLAY BLINK
+========================================== */
+
+#display:focus {
+  animation: blink 0.7s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    text-shadow: none;
+  }
+
+  to {
+    text-shadow: 0 0 18px var(--primary);
+  }
+}
